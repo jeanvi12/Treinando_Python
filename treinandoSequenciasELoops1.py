@@ -1,8 +1,14 @@
 # ==========================================
+#  LISTAS, TUPLAS, SLICING E LOOPS
+# ==========================================
+
+
+# ==========================================
 #  Desafio 1 — Gerenciador de lista de compras
 # ==========================================
 # Crie um programa que comece com uma lista de compras pré-definida com pelo menos 5 itens.
 # A partir dela, você deve:
+#
 #   1- Mostrar os 3 primeiros itens usando slicing
 #   2- Substituir o segundo item por outro (explorando mutabilidade)
 #   3- Adicionar 2 itens novos ao final
@@ -13,6 +19,7 @@
 # e entender como o slicing funciona na prática.
 
 print(f"\n{'-'*20}Desafio 1 — Gerenciador de lista de compras{'-'*20}\n")
+
 compras = ['Fones', 'Mochila', 'Caderno', 'Caneta', 'Lápis']
 
 print(f"Os primeiros 3 itens da lista são: {compras[:3]}\n")
@@ -32,7 +39,8 @@ print(f"{'-'*30}FIM DO PRIMEIRO DESAFIO{'-'*30}\n")
 
 
 # ==========================================
-#  Desafio 2 — Registro de abastecimentos (tuplas vs listas)
+#  Desafio 2 — Registro de abastecimentos
+#  (tuplas vs listas)
 # ==========================================
 # Imagine que você está registrando abastecimentos em um posto.
 # Cada abastecimento é uma tupla com 3 dados: (data, litros, valor_total).
@@ -65,7 +73,7 @@ for abastecimento in lista_abastecimentos:
     total_gasto += abastecimento[2]
 print(f"Total de litros: {total_litros}\nTotal gasto: R${total_gasto:.2f}\n")
 
-print(f"{'-'*30}FIM DO PRIMEIRO DESAFIO{'-'*30}\n")
+print(f"{'-'*30}FIM DO SEGUNDO DESAFIO{'-'*30}\n")
 
 # Os valores das Tuplas são imutáveis, por isso não é possível alterar o valor de litros.
 # Já a lista é mutável, o que significa que podemos adicionar, remover ou alterar
@@ -89,8 +97,9 @@ print(f"{'-'*30}FIM DO PRIMEIRO DESAFIO{'-'*30}\n")
 #   6- Mostre o ranking final e guarde o top 3 em uma tupla
 #      (porque o pódio não pode ser alterado depois de definido)
 
-clientes = ["Ana", "Carlos", "Bia", "Diego", "Eva", "Fábio", "Gabi", "Hugo"]
 print(f"\n{'-'*20}Desafio 3 — Sistema de ranking de clientes{'-'*20}\n")
+
+clientes = ["Ana", "Carlos", "Bia", "Diego", "Eva", "Fábio", "Gabi", "Hugo"]
 print(f"A lista de clientes ordenados por pontos: {clientes}\n")
 
 print(f"O pódio (Top 3) de clientes com mais pontos é: {clientes[:3]}\n")
